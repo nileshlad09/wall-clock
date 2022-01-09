@@ -1,10 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+:root {
+  --main-bg-color: rgba(101, 159, 210, 0.69);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  height: 10vh;
+  width: 90vw;
+  margin: auto;
+  background-color: var(--main-bg-color);
+  border: solid 3px lemonchiffon;
+  box-shadow: 5px 5px 5px rgb(204, 190, 190);  
+}
+header h1{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+}
 #container {
   position: relative;
   margin: auto;
   height: 45vw;
   width: 40vw;
-  background: url(clock.png) no-repeat;
+  background: url(clock-modified.png) no-repeat;
   background-size: 100%;
+  margin-top: 10px;
+  margin-bottom: -5px;
 }
 #hour,
 #minute,
@@ -32,4 +54,13 @@
   height: 33%;
   top: 12.5%;
   left: 49.5%;
+}
+footer{
+  position: relative;
+  bottom: 4vw;
+  font-family:'Roboto Condensed', sans-serif;
+  background-color: var(--main-bg-color);
+  height: 7vh;
+  border: solid 3px lemonchiffon;
+  font-size: 20px;
 }
